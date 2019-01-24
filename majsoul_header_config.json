@@ -2,7 +2,7 @@
 	"request": [
 		{
 			"enable": true,
-			"name": "重定向code.js到fxxk.js",
+			"name": "重定向code.js到majsoul_code.js",
 			"ruleType": "redirect",
 			"matchType": "regexp",
 			"pattern": "^http(s?)://(www\\.)?majsoul\\.union-game\\.com/0/[^/]+/code.js",
