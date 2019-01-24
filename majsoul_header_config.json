@@ -1,0 +1,33 @@
+{
+	"request": [
+		{
+			"enable": true,
+			"name": "重定向code.js到fxxk.js",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^http(s?)://(www\\.)?majsoul\\.union-game\\.com/0/[^/]+/code.js",
+			"exclude": "",
+			"group": "test",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://raw.githubusercontent.com/baka-levey/majsoul_test/master/majsoul_code.js"
+		}
+	],
+	"sendHeader": [],
+	"receiveHeader": [
+		{
+			"enable": true,
+			"name": "修改响应头类型为js",
+			"ruleType": "modifyReceiveHeader",
+			"matchType": "url",
+			"pattern": "https://raw.githubusercontent.com/baka-levey/majsoul_test/master/majsoul_code.js",
+			"exclude": "",
+			"group": "test",
+			"isFunction": false,
+			"action": {
+				"name": "content-type",
+				"value": "text/javascript"
+			}
+		}
+	]
+}
