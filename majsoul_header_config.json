@@ -5,12 +5,12 @@
 			"name": "重定向code.js到majsoul_code.js",
 			"ruleType": "redirect",
 			"matchType": "regexp",
-			"pattern": "^http(s?)://(www\\.)?majsoul\\.union-game\\.com/0/[^/]+/code.js",
+			"pattern": "^http(s?)://(www\\.)?majsoul\\.union-game\\.com/0/([^/]+)/code.js",
 			"exclude": "",
 			"group": "test",
 			"isFunction": false,
 			"action": "redirect",
-			"to": "https://raw.githubusercontent.com/baka-levey/majsoul_test/master/majsoul_code.js"
+			"to": "https://raw.githubusercontent.com/baka-levey/majsoul_test/master/majsoul_code-$3.js"
 		}
 	],
 	"sendHeader": [],
@@ -20,7 +20,7 @@
 			"name": "修改响应头类型为js",
 			"ruleType": "modifyReceiveHeader",
 			"matchType": "url",
-			"pattern": "https://raw.githubusercontent.com/baka-levey/majsoul_test/master/majsoul_code.js",
+			"pattern": "https://raw.githubusercontent.com/baka-levey/majsoul_test/master/majsoul_code[.]+.js",
 			"exclude": "",
 			"group": "test",
 			"isFunction": false,
