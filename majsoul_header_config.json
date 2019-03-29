@@ -32,7 +32,7 @@
 			"name": "修改响应头类型为js",
 			"ruleType": "modifyReceiveHeader",
 			"matchType": "regexp",
-			"pattern": "https://raw.githubusercontent.com/baka-levey/majsoul_test/master/majsoul_code(.+).js",
+			"pattern": "https://raw.githubusercontent.com/baka-levey/majsoul_test/master/majsoul_code(.*).js",
 			"exclude": "",
 			"group": "test",
 			"isFunction": false,
