@@ -10,6 +10,18 @@
 			"group": "test",
 			"isFunction": false,
 			"action": "redirect",
+			"to": "https://raw.githubusercontent.com/baka-levey/majsoul_test/master/majsoul_code.js"
+		},
+		{
+			"enable": false,
+			"name": "重定向code.js到majsoul_code-{version}.js",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^http(s?)://(www\\.)?majsoul\\.union-game\\.com/0/([^/]+)/code.js",
+			"exclude": "",
+			"group": "test",
+			"isFunction": false,
+			"action": "redirect",
 			"to": "https://raw.githubusercontent.com/baka-levey/majsoul_test/master/majsoul_code-$3.js"
 		}
 	],
